@@ -1,0 +1,31 @@
+<!-- Wrap your carousel-container in this: -->
+<div class="carousel-wrapper">
+  <div class="carousel-container">
+    <button mat-button (click)="previous()">&lt;</button>
+
+    <div class="carousel">
+      <div
+        class="carousel-item"
+        *ngFor="let item of visibleItems"
+        [@slideAnimation]="animationState">
+        <mat-card class="example-card" appearance="outlined">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ item.title }}</mat-card-title>
+            <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image [src]="item.image" alt="Photo of {{ item.title }}">
+          <mat-card-content>
+            <p>{{ item.description }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>Github</button>
+            <button mat-button>Website</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+
+    <button mat-button (click)="next()">&gt;</button>
+  </div>
+</div>
