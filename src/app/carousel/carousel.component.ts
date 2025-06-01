@@ -1,8 +1,8 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { NgFor, NgIf } from '@angular/common';
 import { trigger, transition, style, animate } from '@angular/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-carousel',
@@ -23,7 +23,7 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class CarouselComponent {
 
-    items = [
+  items = [
     {
       title: 'Shiba Inu',
       subtitle: 'Dog Breed',
@@ -62,37 +62,37 @@ export class CarouselComponent {
     },
   ];
 
-    
 
-    animationState = '';
 
-    
-    visibleItems = this.items.slice(0, 3);
-    hiddenItems = this.items.slice(3);
-    
+  animationState = '';
 
-    next() {
-      const removedItem = this.visibleItems.shift(); // remove first
-      const newItem = this.hiddenItems.shift(); // get new hidden item
-      if (newItem) {
-        this.visibleItems.push(newItem); // add to visible
-        this.hiddenItems.push(removedItem!); // send removed item to back
-      }
-      this.triggerAnimation();
+
+  visibleItems = this.items.slice(0, 3);
+  hiddenItems = this.items.slice(3);
+
+
+  next() {
+    const removedItem = this.visibleItems.shift(); // remove first
+    const newItem = this.hiddenItems.shift(); // get new hidden item
+    if (newItem) {
+      this.visibleItems.push(newItem); // add to visible
+      this.hiddenItems.push(removedItem!); // send removed item to back
     }
+    this.triggerAnimation();
+  }
 
-    previous() {
-      const removedItem = this.visibleItems.pop(); // remove last
-      const newItem = this.hiddenItems.pop(); // get last hidden item
-      if (newItem) {
-        this.visibleItems.unshift(newItem); // add to visible start
-        this.hiddenItems.unshift(removedItem!); // send removed item to back
-      }
-      this.triggerAnimation();
+  previous() {
+    const removedItem = this.visibleItems.pop(); // remove last
+    const newItem = this.hiddenItems.pop(); // get last hidden item
+    if (newItem) {
+      this.visibleItems.unshift(newItem); // add to visible start
+      this.hiddenItems.unshift(removedItem!); // send removed item to back
     }
+    this.triggerAnimation();
+  }
 
-    triggerAnimation() {
-      this.animationState = 'in';
-      setTimeout(() => (this.animationState = ''), 500);
-    } 
+  triggerAnimation() {
+    this.animationState = 'in';
+    setTimeout(() => (this.animationState = ''), 500);
+  }
 }

@@ -15,3 +15,38 @@
   color: white;
   padding: 20px;
 }
+
+.custom-shape-divider-top-1748776481 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1748776481 svg {
+  position: relative;
+  display: block;
+  width: calc(254% + 1.3px);
+  height: 260px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1748776481 .shape-fill {
+  fill: #008080;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-top-1748776481 svg {
+    width: calc(227% + 1.3px);
+    height: 254px;
+  }
+}
+
+.section-with-divider {
+  position: relative;
+  padding-top: 221px;
+}
