@@ -12,6 +12,14 @@
     animation: typing 2s steps(19), cursor .4s step-end infinite alternate;
 }
 
+img{
+    width: 13%;
+    height: 30%;
+    margin-left: 200px;
+    border: #008080 solid;
+    border-radius: 150px;
+}
+
 @keyframes cursor {
     50% {
         border-color: transparent;
