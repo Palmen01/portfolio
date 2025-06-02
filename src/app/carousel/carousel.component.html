@@ -9,11 +9,13 @@
             <mat-card-title>{{ item.title }}</mat-card-title>
             <mat-card-subtitle>{{ item.subtitle }}</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image [src]="item.image" alt="Photo of {{ item.title }}">
+          <div class="card-image-container">
+            <img mat-card-image [src]="item.image" alt="Photo of {{ item.title }}">
+          </div>
           <mat-card-content>
             <p>{{ item.description }}</p>
           </mat-card-content>
-          <mat-card-actions>
+          <mat-card-actions class="links">
             <a mat-button>Github</a>
             <a mat-button>Website</a>
           </mat-card-actions>

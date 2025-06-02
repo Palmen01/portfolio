@@ -1,5 +1,7 @@
 .container {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .textName {
@@ -12,10 +14,9 @@
     animation: typing 2s steps(19), cursor .4s step-end infinite alternate;
 }
 
-img{
+img {
     width: 13%;
     height: 30%;
-    margin-left: 200px;
     border: #008080 solid;
     border-radius: 150px;
 }

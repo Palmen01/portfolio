@@ -25,33 +25,33 @@ export class CarouselComponent {
 
   items = [
     {
-      title: 'Shiba Inu',
-      subtitle: 'Dog Breed',
-      image: 'https://material.angular.dev/assets/img/examples/shiba2.jpg',
-      description: 'The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan...',
+      title: 'Planera',
+      subtitle: 'XLENT',
+      image: 'Planera.PNG',
+      description: 'Ett bokningssystem för en kommuns idrottsanläggningar, som fotbollsplaner och tennishallar',
     },
     {
       title: 'Golden Retriever',
       subtitle: 'Dog Breed',
-      image: 'https://material.angular.dev/assets/img/examples/shiba2.jpg',
+      image: 'Planera.PNG',
       description: 'Golden Retrievers are known for their gentle temperament and friendly personality...',
     },
     {
       title: 'German Shepherd',
       subtitle: 'Dog Breed',
-      image: 'https://material.angular.dev/assets/img/examples/shiba2.jpg',
+      image: 'Planera.PNG',
       description: 'German Shepherds are loyal, courageous, and very intelligent...',
     },
     {
       title: 'Labrador Retriever',
       subtitle: 'Dog Breed',
-      image: 'https://material.angular.dev/assets/img/examples/shiba2.jpg',
+      image: 'Planera.PNG',
       description: 'Labradors are friendly, outgoing, and high-spirited companions...',
     },
     {
       title: 'Husky',
       subtitle: 'Dog Breed',
-      image: 'https://material.angular.dev/assets/img/examples/shiba2.jpg',
+      image: 'Planera.PNG',
       description: 'Huskies are known for their striking appearance and endurance...',
     },
     {
