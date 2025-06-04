@@ -1,6 +1,10 @@
-<div class="skilltree-container">
-  <div class="skill" *ngFor="let skill of skills">
-    <img [src]="skill.icon" [alt]="skill.name"  />
-    <span>{{ skill.name }}</span>
+<div class="skilltree-wrapper">
+  <h2 class="skilltree-title">Proficiencies</h2>
+  
+  <div class="skilltree-container">
+    <div class="skill" *ngFor="let skill of skills">
+      <img [src]="skill.icon" [alt]="skill.name" />
+      <span>{{ skill.name }}</span>
+    </div>
   </div>
 </div>

@@ -12,7 +12,7 @@ export class SkilltreeComponent {
     { name: 'SQL', icon: 'sql.png' },
     { name: 'GitHub', icon: 'github.svg' },
     { name: 'Angular', icon: 'angular.svg' },
-    { name: 'C#', icon: 'sharp.svg'},
+    { name: 'C#', icon: 'csharp.png'},
     { name: '.NET', icon: 'dotnet.svg' },
     { name: 'JavaScript', icon: 'javascript.svg' },
     { name: 'TypeScript', icon: 'typescript.svg' },

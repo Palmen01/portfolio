@@ -1,9 +1,22 @@
+.skilltree-wrapper {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.skilltree-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .skilltree-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  padding: 1rem;
 }
 
 .skill {
