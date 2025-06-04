@@ -1,0 +1,6 @@
+<div class="skilltree-container">
+  <div class="skill" *ngFor="let skill of skills">
+    <img [src]="skill.icon" [alt]="skill.name"  />
+    <span>{{ skill.name }}</span>
+  </div>
+</div>

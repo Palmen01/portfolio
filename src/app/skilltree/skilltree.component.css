@@ -1,0 +1,21 @@
+.skilltree-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  text-align: center;
+}
+
+.skill img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}

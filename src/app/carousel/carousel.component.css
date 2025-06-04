@@ -101,6 +101,8 @@
 
 .carousel-item {
   flex: 0 0 33.33%;
+  
+  
   text-align: center;
   padding: 1rem;
   box-sizing: border-box;
