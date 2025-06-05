@@ -4,8 +4,6 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 
-
-
 @Component({
   selector: 'app-carousel',
   imports: [MatButtonModule, MatCardModule, NgFor],
@@ -64,14 +62,9 @@ export class CarouselComponent {
     },
   ];
 
-
-
   animationState = '';
-
-
   visibleItems = this.items.slice(0, 3);
   hiddenItems = this.items.slice(3);
-
 
   next() {
     const removedItem = this.visibleItems.shift(); // remove first
