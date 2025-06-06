@@ -16,5 +16,7 @@ export class SkilltreeComponent {
     { name: '.NET', icon: 'dotnet.svg' },
     { name: 'JavaScript', icon: 'javascript.svg' },
     { name: 'TypeScript', icon: 'typescript.svg' },
+    { name: 'HTML', icon: 'html5.svg' },
+    { name: 'CSS', icon: 'css.svg' },
   ];
 }
