@@ -103,7 +103,7 @@ mat-card-subtitle,
 mat-card-content,
 mat-card-actions,
 a[mat-button] {
-  color: white !important;
+  color: black !important;
 }
 
 /* Ensure consistent title/subtitle sizing */
