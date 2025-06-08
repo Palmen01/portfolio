@@ -5,10 +5,11 @@ import { HeroComponent } from './hero/hero.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SkilltreeComponent } from './skilltree/skilltree.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, HeroComponent, CarouselComponent, SkilltreeComponent, AboutMeComponent],
+  imports: [NavbarComponent, HeroComponent, CarouselComponent, SkilltreeComponent, AboutMeComponent, ContactFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

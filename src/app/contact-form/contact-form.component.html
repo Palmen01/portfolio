@@ -1,0 +1,31 @@
+<div class="title">
+    <p><strong>Contact me!</strong></p>
+</div>
+
+<form class="form-grid">
+    <div class="input-grid">
+        <mat-form-field appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput>
+            <mat-error>Required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Subject</mat-label>
+            <input matInput>
+            <mat-error>Required</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div class="message-field">
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Meddelande</mat-label>
+            <textarea matInput rows="5"></textarea>
+            <mat-error>Detta fält måste fyllas i</mat-error>
+        </mat-form-field>
+    </div>
+
+    <div class="example-button-row">
+        <button mat-flat-button type="button" (click)="onSubmit()">Ansök</button>
+    </div>
+</form>
