@@ -16,8 +16,8 @@
             <p>{{ item.description }}</p>
           </mat-card-content>
           <mat-card-actions class="links">
-            <a mat-button>Github</a>
-            <a mat-button>Website</a>
+            <a mat-button [href]="item.git">Github</a>
+            <a mat-button [href]="item.web">Website</a>
           </mat-card-actions>
         </mat-card>
       </div>

@@ -7,9 +7,10 @@ import { SkilltreeComponent } from './skilltree/skilltree.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
+
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, HeroComponent, CarouselComponent, SkilltreeComponent, AboutMeComponent, ContactFormComponent],
+  imports: [NavbarComponent, HeroComponent, CarouselComponent, ContactFormComponent, SkilltreeComponent, AboutMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

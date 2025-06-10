@@ -2,14 +2,17 @@
   display: flex;
   justify-content: center; 
   align-items: center;     
-  height: 70%;         
+  min-height: 70vh;         
   padding: 1rem;          
   box-sizing: border-box;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .carousel-container {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .carousel {
@@ -29,30 +32,31 @@
 
 .example-card {
   max-width: 400px;
-  height: 550px; /* Increased height to accommodate all content */
+  height: 550px; /* Fixed height for desktop */
   margin: 0 auto;
-  background-color: #008080;
+  background-color: #a2c7c9;
+  box-shadow: 0 4px 12px rgba(10, 10, 10, 1000);
   display: flex;
-  flex-direction: column; /* Ensure proper stacking */
+  flex-direction: column;
 }
 
 mat-card {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
   height: 100%;
   width: 100%;
 }
 
 .card-image-container {
-  height: 220px; /* Slightly reduced to make room for actions */
-  overflow: hidden; /* Hide overflow if image doesn't fit perfectly */
-  flex-shrink: 0; /* Prevent shrinking */
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 img {
   height: 100%;
   width: 100%;
-  object-fit: cover; /* Maintain aspect ratio and fill container */
+  object-fit: cover;
 }
 
 mat-card-header {
@@ -60,42 +64,40 @@ mat-card-header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 80px; /* Fixed minimum height */
-  padding: 16px;
-  flex-shrink: 0; /* Prevent shrinking */
-  justify-content: center; /* Center content vertically */
+  min-height: 70px;
+  padding: 12px 16px;
+  flex-shrink: 0;
+  justify-content: center;
 }
 
 mat-card-content {
-  flex: 1; /* Take remaining space */
-  padding: 16px;
-  overflow-y: auto; /* Allow scrolling if content is too long */
+  flex: 1;
+  padding: 12px 16px;
   display: flex;
-  align-items: flex-start; /* Align content to top */
-  min-height: 60px; /* Reduced minimum height */
-  max-height: 120px; /* Added max height to prevent overflow */
+  align-items: flex-start;
+  min-height: 80px;
 }
 
 mat-card-content p {
   margin: 0;
   line-height: 1.4;
-  /* Limit text to prevent overflow */
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Limit to 4 lines */
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 
 mat-card-actions {
-  min-height: 60px; /* Fixed height for actions */
+  min-height: 50px;
   padding: 8px 16px 16px;
-  flex-shrink: 0; /* Prevent shrinking */
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-top: auto; /* Push to bottom of card */
+  margin-top: auto;
 }
 
 mat-card-title,
@@ -103,31 +105,31 @@ mat-card-subtitle,
 mat-card-content,
 mat-card-actions,
 a[mat-button] {
-  color: white !important;
+  color: black !important;
 }
 
-/* Ensure consistent title/subtitle sizing */
 mat-card-title {
   font-size: 1.25rem;
   line-height: 1.2;
   margin-bottom: 4px;
-  /* Limit title to prevent overflow */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  word-wrap: break-word;
 }
 
 mat-card-subtitle {
   font-size: 0.875rem;
   line-height: 1.2;
-  /* Limit subtitle to prevent overflow */
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  word-wrap: break-word;
 }
 
+/* Tablet styles */
 @media (min-width: 768px) and (max-width: 1024px) {
   .carousel-item {
     flex: 0 0 50%;
@@ -136,59 +138,115 @@ mat-card-subtitle {
 
   .example-card {
     max-width: 350px;
-    height: 450px; /* Slightly smaller fixed height */
+    height: 450px; /* Fixed height for tablet */
   }
 
   .card-image-container {
-    height: 200px;
+    height: 180px;
   }
 }
 
+/* Mobile styles */
 @media (max-width: 767px) {
   .carousel-wrapper {
-    flex-direction: row;
-    height: auto;
+    min-height: auto;
+    padding: 0.5rem;
   }
 
   .carousel-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 100%;
   }
 
   .carousel-item {
     flex: 0 0 100%;
-    max-width: 90vw;
     padding: 0.5rem;
   }
 
   .example-card {
-    max-width: 300px;
+    max-width: 100%;
     height: 400px; /* Fixed height for mobile */
     margin: 0 auto;
   }
 
   .card-image-container {
-    height: 150px;
-  }
-
-  button[mat-button] {
-    width: auto;
-    height: auto;
-    margin: 0 0.5rem;
+    height: 140px;
   }
 
   mat-card-header {
     min-height: 60px;
+    padding: 8px 12px;
+  }
+
+  mat-card-title {
+    font-size: 1.1rem;
+  }
+
+  mat-card-subtitle {
+    font-size: 0.8rem;
   }
 
   mat-card-content {
     min-height: 60px;
+    padding: 8px 12px;
+  }
+
+  mat-card-content p {
+    -webkit-line-clamp: 3;
+    font-size: 0.9rem;
   }
 
   mat-card-actions {
+    min-height: 45px;
+    padding: 6px 12px 12px;
+  }
+
+  button[mat-button] {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    padding: 0.25rem;
+  }
+
+  .example-card {
+    height: 350px; /* Fixed height for small phones */
+  }
+
+  .card-image-container {
+    height: 120px;
+  }
+
+  mat-card-header {
     min-height: 50px;
+    padding: 6px 8px;
+  }
+
+  mat-card-title {
+    font-size: 1rem;
+    -webkit-line-clamp: 1;
+  }
+
+  mat-card-content {
+    min-height: 50px;
+    padding: 6px 8px;
+  }
+
+  mat-card-content p {
+    -webkit-line-clamp: 2;
+    font-size: 0.85rem;
+  }
+
+  mat-card-actions {
+    min-height: 40px;
+    padding: 4px 8px 8px;
+  }
+
+  button[mat-button] {
+    font-size: 0.8rem;
+    padding: 4px 8px;
   }
 }
