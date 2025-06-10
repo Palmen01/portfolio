@@ -3,7 +3,7 @@
   <source src="12006886_1080_1920_60fps.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video> -->
-<app-navbar></app-navbar>
+<app-navbar (scrollTo)="scrollToSection($event)"></app-navbar>
 
 <section class="section-with-divider">
     <div class="custom-shape-divider-top-1748776481">
@@ -14,7 +14,7 @@
 </section>
 
 <app-hero></app-hero>
-<app-about-me></app-about-me>
-<app-skilltree></app-skilltree>
-<app-carousel></app-carousel>
-<app-contact-form></app-contact-form>
+<app-about-me id="about-me"></app-about-me>
+<app-skilltree id="my-skills"></app-skilltree>
+<app-carousel id="projects"></app-carousel>
+<app-contact-form id="contact-form"></app-contact-form>

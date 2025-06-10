@@ -1,18 +1,34 @@
 <nav class="navbar">
   <div class="links">
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About me</a>
+    <a (click)="onNavigate('home')">Home</a>
+    <a (click)="onNavigate('about-me')">About me</a>
+    <a (click)="onNavigate('projects')">Projects</a>
+    <a (click)="onNavigate('contact-form')">Contact</a>
   </div>
-  
+
+  <nav id="hamburger-nav">
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a (click)="onNavigate('home')">Home</a></li>
+        <li><a (click)="onNavigate('about-me')">About me</a></li>
+        <li><a (click)="onNavigate('projects')">Projects</a></li>
+        <li><a (click)="onNavigate('contact-form')">Contact</a></li>
+      </div>
+    </div>
+  </nav>
 
   <div class="skilltree-wrapper">
     <div class="skilltree-container">
       <div class="skill">
-        <a href="">
+        <a href="https://www.linkedin.com/in/simon-palm-nordholm-2bb440290/">
           <img src="linkedin.png" alt="linkedin">
         </a>
-        <a href="https://github.com/Palmen01">
+        <a href="https://github.com/Palmen01/">
           <img src="github.svg" alt="github">
         </a>
         <a href="">
