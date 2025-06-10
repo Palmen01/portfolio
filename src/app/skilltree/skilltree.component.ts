@@ -10,13 +10,16 @@ import { NgFor, NgIf } from '@angular/common';
 export class SkilltreeComponent {
   skills = [
     { name: 'SQL', icon: 'sql.png' },
-    { name: 'GitHub', icon: 'github.svg' },
+    { name: 'Docker', icon: 'docker.svg' },
+    { name: 'Azure', icon: 'azure.png' },
     { name: 'Angular', icon: 'angular.svg' },
+    { name: 'Vue.js', icon: 'vuedotjs.svg' },
     { name: 'C#', icon: 'csharp.png'},
     { name: '.NET', icon: 'dotnet.svg' },
     { name: 'JavaScript', icon: 'javascript.svg' },
     { name: 'TypeScript', icon: 'typescript.svg' },
     { name: 'HTML', icon: 'html5.svg' },
     { name: 'CSS', icon: 'css.svg' },
+    { name: 'GitHub', icon: 'github.svg' },
   ];
 }
