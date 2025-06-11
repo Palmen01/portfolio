@@ -1,33 +1,36 @@
 <div class="experience-section">
     <div class="toggle-buttons">
-        <button (click)="showSection('work')" [class.active]="activeSection === 'work'">
-            Work
+        <button (click)="showSection('work')" [class.active]="activeSection === 'work'" class="toggle-btn">
+            Work Experience
         </button>
-        <button (click)="showSection('education')" [class.active]="activeSection === 'education'">
+        <button (click)="showSection('education')" [class.active]="activeSection === 'education'" class="toggle-btn">
             Education
         </button>
     </div>
 
-    <div *ngIf="activeSection === 'work'" class="timeline">
-        <div *ngFor="let job of workList" class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3>{{ job.company }}</h3>
-                <p>{{ job.position }} | {{ job.period }}</p>
-                <p>{{ job.description }}</p>
+    <div class="section-container">
+        <div *ngIf="activeSection === 'work'" class="timeline work" [@slideIn]>
+            <div *ngFor="let job of workList; let i = index" class="timeline-item" [style.animation-delay.s]="i * 0.1">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>{{ job.position }}</h3>
+                    <div class="position-period">{{ job.company }} | {{ job.period }}</div>
+                    <div class="description">{{ job.description }}</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div *ngIf="activeSection === 'education'" class="timeline">
-        <div *ngFor="let edu of educationList" class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-                <h3>{{ edu.institution }}</h3>
-                <p>{{ edu.degree }} | {{ edu.period }}</p>
-                <ul *ngIf="edu.description.length">
-                    <li *ngFor="let item of edu.description">{{ item }}</li>
-                </ul>
+        <div *ngIf="activeSection === 'education'" class="timeline education" [@slideIn]>
+            <div *ngFor="let edu of educationList; let i = index" class="timeline-item"
+                [style.animation-delay.s]="i * 0.1">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>{{ edu.degree }}</h3>
+                    <div class="position-period">{{ edu.institution }} | {{ edu.period }}</div>
+                    <ul *ngIf="edu.description.length">
+                        <li *ngFor="let item of edu.description">{{ item }}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

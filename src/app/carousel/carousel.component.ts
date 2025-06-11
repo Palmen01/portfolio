@@ -28,7 +28,7 @@ export class CarouselComponent {
       title: 'Planera',
       subtitle: 'XLENT',
       image: 'Planera.PNG',
-      description: 'Ett bokningssystem för en kommuns idrottsanläggningar, som fotbollsplaner och tennishallar',
+      description: 'Booking system for municipal sports facilities such as Football Fields',
       git: "https://github.com/Palmen01",
       web: "https://jolly-coast-004c6b20f.6.azurestaticapps.net/home",
     },
