@@ -2,7 +2,7 @@
   padding: 40px 30px;
   max-width: 900px;
   margin: auto;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
 }
 
 .toggle-buttons {
@@ -61,11 +61,10 @@
   }
 }
 
-/* Section Transitions */
 .section-container {
   position: relative;
   min-height: 400px;
-  overflow-x: hidden; /* Prevent content from extending outside */
+  overflow-x: hidden;
 }
 
 .timeline {
@@ -79,7 +78,6 @@
   }
 }
 
-/* Timeline Items with Stagger Animation */
 .timeline-item {
   display: flex;
   position: relative;
@@ -103,7 +101,6 @@
     background-color: rgba(52, 152, 219, 0.05);
     border-radius: 8px;
     padding: 15px;
-    /* Removed margin-left: -15px; to prevent overflow */
     box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
 
     .timeline-marker {
@@ -121,13 +118,11 @@
   }
 }
 
-/* Work section hover styles */
 .timeline.work .timeline-item:hover {
   background-color: rgba(231, 76, 60, 0.05);
   box-shadow: 0 4px 15px rgba(231, 76, 60, 0.1);
 }
 
-/* Enhanced Timeline Markers */
 .timeline-marker {
   position: absolute;
   left: -42px;
@@ -154,12 +149,11 @@
   left: 0;
 }
 
-/* Typography & Content Styling */
 .timeline-content {
   padding-left: 15px;
   flex-grow: 1;
-  width: 0; /* Force flex item to wrap */
-  min-width: 0; /* Allow shrinking */
+  width: 0;
+  min-width: 0;
   max-width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -227,7 +221,6 @@
   }
 }
 
-/* Animations */
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -239,11 +232,10 @@
   }
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .experience-section {
     padding: 20px 15px;
-    overflow-x: hidden; /* Ensure no horizontal scroll on mobile */
+    overflow-x: hidden;
   }
 
   .timeline {
@@ -261,14 +253,13 @@
 
     .toggle-btn {
       width: 200px;
-      max-width: calc(100vw - 30px); /* Prevent buttons from extending outside viewport */
+      max-width: calc(100vw - 30px);
     }
   }
 
-  /* Additional mobile fixes */
   .timeline-content {
-    padding-left: 10px; /* Reduce padding on mobile */
-    width: calc(100vw - 120px); /* Constrain width on mobile */
+    padding-left: 10px;
+    width: calc(100vw - 120px);
     max-width: calc(100vw - 120px);
   }
 
@@ -277,12 +268,12 @@
   }
 
   .timeline-item:hover {
-    transform: translateX(2px); /* Reduce hover movement on mobile */
-    padding: 10px; /* Reduce padding to prevent overflow */
+    transform: translateX(2px);
+    padding: 10px;
   }
 
   .timeline-content h3 {
-    font-size: 1.2rem; /* Slightly smaller on mobile */
+    font-size: 1.2rem;
   }
 
   .timeline-content .position-period {
