@@ -15,6 +15,11 @@
   width: 100%;
 }
 
+.carousel-container button {
+  background-color: #b4dcdf;
+
+}
+
 .carousel {
   display: flex;
   overflow: hidden;
