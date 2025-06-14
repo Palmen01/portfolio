@@ -1,10 +1,9 @@
 .container {
   max-width: 900px;
-  /* background-color: #fff; */
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 10px;
-  /* box-shadow: 0 4px 10px rgba(0,0,0,0.1); */
+  justify-content: left;
 }
 
 h1 {
@@ -21,7 +20,6 @@ h1 {
   align-items: flex-start;
   gap: 2rem;
   flex-direction: row;
-  /* Always keep image on the right */
 }
 
 .content p {

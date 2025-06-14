@@ -43,6 +43,15 @@
   margin-bottom: 0.5rem;
 }
 
+.skill a img {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.skill a:hover img {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
 /* Hamburger menu */
 
 #hamburger-nav{
