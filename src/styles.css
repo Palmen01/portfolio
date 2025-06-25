@@ -8,6 +8,5 @@ body {
     background-attachment: fixed;
 }
 html, body { height: 100%;  max-width: 100vw; }
-/* overflow-x: hidden; */
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
