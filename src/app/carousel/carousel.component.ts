@@ -33,11 +33,11 @@ export class CarouselComponent {
       web: "https://jolly-coast-004c6b20f.6.azurestaticapps.net/home",
     },
     {
-      title: 'Work in progress',
-      subtitle: 'Application',
-      image: 'template.jpg',
-      description: 'Will be filled in when project is under way...',
-      git: "https://github.com/Palmen01",
+      title: 'inWintory',
+      subtitle: 'Inventory Manager sim',
+      image: 'inWintory.PNG',
+      description: 'An inventory manager simulator. Built in seeder for adding items to the database or have full control from the frontend. Developed with Angular, Html/Tailwind, C# EFC. (In Development)',
+      git: "https://github.com/Palmen01/InWintory",
       web: "https://github.com/Palmen01",
     },
     {
